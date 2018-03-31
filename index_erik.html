@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Data vis, annual report, or Ikea landing Page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+<!--google fonts here-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css">
+<!--thimble framework css here-->
+      <link rel="stylesheet" type="text/css" href="css/thimble.css">
+<!--animations for wow style sheet-->
+<link rel="stylesheet" href="css/animate.css">
+  <!--animate on scroll--> 
+<!-- Your Styles  go here-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+    <!--link to jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--smooth scrolling-->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+   <!--wow animatons-->
+   <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+  </head>
+
+  <body>
+   <div class="header">
+   
+<div class="row_inner">
+<!--specifying the numbers three and nine creates a twelve column layout...try five and seven if you like-->
+ <div class="cell three">logo here <a href="https://css-tricks.com/creating-non-rectangular-headers/" target="_blank">Article on headers</a></div>
+  <div class="cell nine nav"><ul>
+  <!--scroll to named anchors-->
+  <li> <a href="#one">SVG</a></li> 
+  <li> <a href="#two">parallax</a></li>   
+  <li> <a href="#three">css transitions</a></li> 
+  <li> <a href="#four">css keyframes</a></li>
+  <li> <a href="#five">WOW</a></li>
+  <li> <a href="#six">Clippy</a></li></ul> </div>
+
+</div>
+</div>
+<!--background video-->
+<div id="video"><h1 class="huge"><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video" target="_blank">Original article</a></h1><video playsinline autoplay muted loop poster="img/clouds.jpg" id="bgvid">
+  <!--the poster image loads as a fallback if the video fails-->
+   <!--webm is the file format needed for firefox-->
+    <source src="img/clouds.webm" type="video/webm">
+    <source src="img/clouds.mp4" type="video/mp4">
+</video></div>
+<div class="container">
+<div id="one"><h3>SVG animation | <a href="https://maxwellito.github.io/vivus-instant/" target="_blank">Vivus instant</a> is a tool for generating animated svg files. Draw in Illustrator, save as .svg, upload to Vivus, set parameters, and download animated file to your img folder.</h3>
+ <div class="row">
+ <div class="cell"><img src="img/Snowflake_2_animated.svg" alt="flake"/></div>
+  
+  <div class="cell"><img src="img/arrows_animated.svg"/></div>
+  <div class="cell"><img src="img/deer-black-silhouette_animated.svg" alt=""/></div>
+  </div>
+	  </div>   <!--end one-->
+<div id="two"><h3>Parallax | <a href="https://dixonandmoe.com/rellax/" target="_blank">Original Source</a> Rellax is a really easy parallax framework. Simply give an element the class of 'rellax' and a data-rellax-speed="x", where the number range goes from -10 to +10. Positive numbers scroll upwards and negative numbers scroll down the page. The farther the number is from zero, the faster it travels.</h3>
+<div class="row">
+  <div class="cell">
+                 <div class="lg-green rellax"
+                  data-rellax-speed="1">
+                  <h4>SPEED 1 (-10 to +10)</h4>
+	  </div>
+                  </div>
+  <div class="cell"><div class="lg-green rellax"
+                  data-rellax-speed="2">
+                  <h4>SPEED 2 (-10 to +10)</h4>
+	  </div></div>
+  <div class="cell"><div class="lg-green rellax"
+                  data-rellax-speed="3">
+                  <h4>SPEED 3 (-10 to +10)</h4>
+	  </div></div>
+  <div class="cell"><div class="lg-green rellax"
+                  data-rellax-speed="4">
+                  <h4>SPEED 4 (-10 to +10)</h4>
+	  </div></div>
+</div><!--end row-->
+<div class="row">
+  <div class="cell">
+                 <div class="lg-green rellax"
+                  data-rellax-speed="-1">
+                  <h4>SPEED -1 (-10 to +10)</h4>
+	  </div>
+                  </div>
+  <div class="cell"><div class="lg-green rellax"
+                  data-rellax-speed="-2">
+                  <h4>SPEED -2 (-10 to +10)</h4>
+	  </div></div>
+  <div class="cell"><div class="lg-green rellax"
+                  data-rellax-speed="-3">
+                  <h4>SPEED -3 (-10 to +10)</h4>
+	  </div></div>
+  <div class="cell"><div class="lg-green rellax"
+                  data-rellax-speed="-4">
+                  <h4>SPEED -4 (-10 to +10)</h4>
+	  </div></div>
+</div><!--end row-->
+
+
+
+</div><!--end two-->
+<div id="three"><h3>css transitions | <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">Read more</a></h3>
+<div class="row">
+	<div class="cell"><a href="#" class="spin">Hover over me</a></div>
+  <div class="cell"><a href="#" class="swell">Hover over me</a></div>
+  <div class="cell"><a href="#" class="levitate">Hover over me</a></div>
+</div></div><!--end three-->
+	  <div id="four"><h3>css keyframes | <a href="http://animista.net/" target="_blank">Keyframe Generator</a></h3>
+<div class="row">
+	<div class="cell"><div id="slide">Hello!</div></div>
+  <div class="cell">about keyframes here</div>
+  <div class="cell"></div>
+</div>
+
+</div><!--end four-->
+<div id="five"><h3>WOW.js | <a href="https://mynameismatthieu.com/WOW/docs.html" target="_blank">Original Source</a></h3>
+<div class="row">
+  <div class="cell wow fadeInLeft" data-wow-delay="2s">Rolls in left<img src="img/doge_1.gif" alt=""/> </div>
+  <div class="cell">This file is linked to a javascript file called 'wow.js'. as long as you add the class of "wow" and any css rule from a style sheet called 'animate.css' you can make it slide, fade, etc. Preview the classes<a href="https://daneden.github.io/animate.css/" target="_blank">here:</a></div>
+  <div class="cell wow fadeInRight" data-wow-delay="2s">rolls in right<img src="img/doge_2.gif" alt=""/></div>
+</div>
+<div class="row">
+  <div class="cell wow bounceInLeft" data-wow-offset="400">400px from bottom<img src="img/doge_1.gif" alt=""/> </div>
+  <div class="cell">about wow here</div>
+  <div class="cell wow bounceInRight" data-wow-delay="3s">3 seconds <img src="img/doge_2.gif" alt=""/></div>
+</div>
+
+</div><!--end five-->
+
+<div id="six"><h3>Clipping Path | <a href="https://bennettfeely.com/clippy/" target="_blank">Generator</a></h3><div class="row" id="clippy"></div></div>
+</div><!--end container-->
+<div class="container-fluid hero"><!--note: concept of "container-fluid" borrowed from bootstrap and added here-->
+<h1> I am the hero, this is my journey</h1>
+<!--<img src="images/mountains.jpg" alt=""/>--> </div>
+
+<div class="container">
+ <h2>All your favorites from the twelve column grid, but with simpler class names</h2>
+<div class="row">
+<div class="cell ten"> ten</div>
+<div class="cell two"> two</div>
+<div class="cell nine"> nine</div>
+<div class="cell three"> three</div>
+<div class="cell eight"> eight</div>
+<div class="cell four"> four</div>
+<div class="cell seven"> seven</div>
+<div class="cell five"> five</div>
+<div class="cell six"> six</div>
+<div class="cell six"> six</div>
+</div>
+
+</div>
+	  <div class="container">
+<div class="row">
+<!--Specifying cell any number of times divices into equal width columns with the calc function. Two cells make halves, three make thirds, and so on -->
+  <div class="cell"><h2>Specifying "cell" any number of times divides into equal width columns... Two cells make halves, three make thirds, and so on</h2></div>
+  <div class="cell">halves</div>
+</div> 
+<div class="row">
+  <div class="cell">thirds</div>
+  <div class="cell">thirds</div>
+  <div class="cell">thirds</div>
+</div>
+<div class="row">
+  <div class="cell">fourths</div>
+  <div class="cell">fourths</div>
+  <div class="cell">fourths</div>
+  <div class="cell">fourths</div>
+</div><!--end row-->
+
+<hr class="eleven" />
+<div class="row">
+  <div class="cell">Row</div>
+  <div class="cell">Regular</div>
+</div>
+<div class="row reverse">           <!--specify row and the class reverse to get row reverse-->
+  <div class="cell">Reverse</div>
+  <div class="cell">Row</div>
+ 
+</div>
+
+<div class="row column">
+<h3>Column </h3>
+  <div class="cell">1</div>
+  <div class="cell">2</div>
+
+</div>
+
+<div class="row column-reverse"><!--specify row and column-reverse to get column-reverse-->
+
+  <div class="cell">1</div>
+  <div class="cell">2</div>
+  <h3>Column reverse</h3>
+  
+</div><!--end row-->
+   
+   <div class="row align-top">
+  <div class="cell">
+    Align Top
+  </div>
+  <div class="cell">
+    The beige hue..Rutrum scelerisque vestibulum non a arcu quisque diam odio parturient blandit tincidunt accumsan ac tempor phasellus odio curae.Dis pulvinar montes neque.
+  </div>
+  <div class="cell">
+    Grumpy wizards make...
+  </div>
+</div>
+          
+<!-- Align Center -->
+<div class="row align-center">
+  <div class="cell">
+    Align Center
+  </div>
+  <div class="cell">
+    The beige hue..Rutrum scelerisque vestibulum non a arcu quisque diam odio parturient blandit tincidunt accumsan ac tempor phasellus odio curae.Dis pulvinar montes neque.
+  </div>
+  <div class="cell">
+    Grumpy wizards make...
+  </div>
+</div>
+          
+<!-- Align Bottom -->
+<div class="row align-bottom">
+  <div class="cell">
+    Align Bottom
+  </div>
+  <div class="cell">
+    The beige hue..Rutrum scelerisque vestibulum non a arcu quisque diam odio parturient blandit tincidunt accumsan ac tempor phasellus odio curae.Dis pulvinar montes neque.
+  </div>
+  <div class="cell">
+    Grumpy wizards make...
+  </div>
+</div>
+          
+<!-- Varied Alignment -->
+<div class="row">
+  <div class="cell align-bottom">
+    Align Mixed
+  </div>
+  <div class="cell align-center">
+    The beige hue Rutrum scelerisque vestibulum non a arcu quisque diam odio parturient blandit tincidunt accumsan ac tempor phasellus odio curae.Dis pulvinar montes neque.
+  </div>
+  <div class="cell align-top">
+    Grumpy wizards make...
+  </div>
+</div>
+          
+<!-- Align Text Baseline -->
+<div class="row align-baseline">
+  <div class="cell">
+    Align Baseline
+  </div>
+  <div class="cell">
+    The beige hue..Rutrum scelerisque vestibulum non a arcu quisque diam odio parturient blandit tincidunt accumsan ac tempor phasellus odio curae.Dis pulvinar montes neque.
+  </div>
+  <div class="cell">
+    Grumpy wizards make...
+  </div>
+</div>
+
+<!-- Align Stretch -->
+<div class="row align-stretch">
+  <div class="cell">
+    Align Stretch
+  </div>
+  <div class="cell">
+    The beige hue..Rutrum scelerisque vestibulum non a arcu quisque diam odio parturient blandit tincidunt accumsan ac tempor phasellus odio curae.Dis pulvinar montes neque.
+  </div>
+  <div class="cell">
+    Grumpy wizards make...
+  </div>
+</div>
+<hr class="eleven">
+<h2>justify-start</h2>
+<div class="row justify-start">
+  <div class="cell two">One</div>
+  <div class="cell two">Two</div>
+  <div class="cell two">Three</div>
+  <div class="cell two">Four</div>
+ 
+</div>
+<h2>justify-end</h2>
+<div class="row justify-end">
+  <div class="cell two">One</div>
+  <div class="cell two">Two</div>
+  <div class="cell two">Three</div>
+  <div class="cell two">Four</div>
+</div>
+<h2>justify-center</h2>
+<div class="row justify-center">
+  <div class="cell two">One</div>
+  <div class="cell two">Two</div>
+  <div class="cell two">Three</div>
+  <div class="cell two">Four</div>
+ 
+</div>
+<h2>justify-space (between)</h2>
+<div class="row justify-space">
+<div class="cell two">One</div>
+  <div class="cell two">Two</div>
+  <div class="cell two">Three</div>
+  <div class="cell two">Four</div>
+
+</div>
+<h2>justify-around</h2>
+<div class="row justify-around">
+  <div class="cell two">One</div>
+  <div class="cell two">Two</div>
+  <div class="cell two">Three</div>
+  <div class="cell two">Four</div>
+  
+</div> 
+<hr class="eleven"> 
+<h2>GTFO! You can change the order for smaller screens by adding a class of 02-small (moves to second position, etc)</h2>       
+  <div class="row grid-row">
+  <div class="cell o3 o1-small">1</div><!--GTFO the order changes for smaller screens based on the small class-->
+  <div class="cell o4 o2-small">2</div>
+  <div class="cell o1 o3-small">3</div>
+  <div class="cell o2 o4-small">4</div>
+ 
+</div> 
+	  </div>
+    <!-- javascript -->
+    <script type="text/javascript" src="js/rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+
+
+  </body>
+</html>
