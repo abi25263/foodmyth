@@ -143,6 +143,7 @@ background-image:url(../img/matterhorn.jpg);height:400px;}
 }
 .about {
     font-family: 'Cabin', sans-serif;
+    font color: aqua
     font-weight: 500;
     font-size: 30px;
     line-height: 40px;
