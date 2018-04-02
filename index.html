@@ -3,19 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Data vis, annual report, or Ikea landing Page</title>
+    <title>Eggology</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-<!--google fonts here-->
+    <!--google fonts here-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css">
-<!--thimble framework css here-->
+    <!--thimble framework css here-->
       <link rel="stylesheet" type="text/css" href="css/thimble.css">
-<!--animations for wow style sheet-->
-<link rel="stylesheet" href="css/animate.css">
-  <!--animate on scroll--> 
-<!-- Your Styles  go here-->
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    
+    <!--animations for wow style sheet-->
+    <link rel="stylesheet" href="css/animate.css">
+  <!--animate on scroll-->
+    <!-- my style sheet here-->
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
     <!--link to jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -38,7 +38,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -58,32 +58,64 @@ $(document).ready(function(){
   </head>
 
   <body>
-   <div class="header">
-   
-<div class="row_inner">
-<!--specifying the numbers three and nine creates a twelve column layout...try five and seven if you like-->
- <div class="cell three">logo here <a href="https://css-tricks.com/creating-non-rectangular-headers/" target="_blank">Article on headers</a></div>
-  <div class="cell nine nav"><ul>
-  <!--scroll to named anchors-->
-  <li> <a href="#one">one</a></li> 
-  <li> <a href="#two">two</a></li>   
-  <li> <a href="#three">three</a></li> 
+    <!--hero section starts here  -->
+    <section id="intro">
+    <div class="myhero">
+    <h1> Hero image at the center</h1>
+    <div class="heroimg">
+    <img src="img/chicken.jpg" class="imgcenter" alt="chicken">
+    </div>
+    <p class="about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo,
+      ex eu vehicula tempus, ex lectus ultricies metus, augue ut cursus lacinia,purus. </p>
+    </div>
+    </section>
+
+  <!--header section starts here
+  <div class="header">
+  <div class="row_inner">
+  <div class="cell seven">Logo goes here <a href="https://css-tricks.com/creating-non-rectangular-headers/" target="_blank">Article on headers</a><ul>
+  scroll to named anchors
+  <li> <a href="#one">one</a></li>
+  <li> <a href="#two">two</a></li>
+  <li> <a href="#three">three</a></li>
   <li> <a href="#four">four</a></li>
   <li> <a href="#five">five</a></li>
-  <li> <a href="#six">six</a></li></ul> </div>
+  <li> <a href="#six">six</a></li></ul>
+  </div>  end cell seven div
+  <div class="cell five nav"> </div>
 
 </div>
 </div>
+end header section-->
+
 <!--background video-->
-
 <div class="container">
 <div id="one">
- <h1>one</h1>
-	  </div>   <!--end one-->
-<div id="two">
+ <h1>SVG design goes here</h1>
+  <div class="row">
+    <div class="cell"><img src="img/Snowflake_2_animated.svg" alt="flake"/></div>
 
-<h1>two</h1>
+    <div class="cell"><h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc
+      itation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est </h3></div>
+    <div class="cell"><img src="img/Snowflake_2_animated.svg" alt="flake"/></div>
+  </div>
+</div>   <!--end one-->
+
+<div id="two">
+<h1>Parallax demo</h1>
+  <div class="row">
+  <div class="cell">
+    <div class="lg-green rellax"
+     data-rellax-speed="1">
+     <h4>SPEED 1 (-10 to +10)</h4>
+    </div>
+  </div>
+  </div>
 </div><!--end two-->
+
 <div id="three">
 	<h1>three</h1>
 </div><!--end three-->
@@ -96,13 +128,13 @@ $(document).ready(function(){
 </div><!--end five-->
 
 <div id="six">
-	
+
 	<h1>six</h1>
 </div><!--end six-->
 </div><!--end container-->
 
 
-    <!-- javascript -->
+    <!-- javascript goes here -->
     <script type="text/javascript" src="js/rellax.js"></script>
     <script>
     	var rellax = new Rellax('.rellax', {
