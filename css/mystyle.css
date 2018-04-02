@@ -120,7 +120,7 @@ background-image:url(../img/matterhorn.jpg);height:400px;}
 .myhero {
 	height:100%
 	margin-top:100px;
-	background-color:#ffce09;
+	background-image: linear-gradient(to top, #ffce09, #ffae0a, #ff8e1e, #fc6d2e, #f04c3c);
 	-webkit-clip-path: polygon(0% 0%, 100% 0, 100% 48%, 34% 63%, 0 42%);
 	clip-path: polygon(0% 0%, 100% 0, 100% 48%, 34% 63%, 0 42%);
   padding-bottom: 40%;
