@@ -12,10 +12,10 @@
       <link rel="stylesheet" type="text/css" href="css/thimble.css">
 <!--animations for wow style sheet-->
 <link rel="stylesheet" href="css/animate.css">
-  <!--animate on scroll--> 
+  <!--animate on scroll-->
 <!-- Your Styles  go here-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    
+
     <!--link to jquery-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -38,7 +38,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -59,15 +59,15 @@ $(document).ready(function(){
 
   <body>
    <div class="header">
-   
+
 <div class="row_inner">
 <!--specifying the numbers three and nine creates a twelve column layout...try five and seven if you like-->
  <div class="cell three">logo here <a href="https://css-tricks.com/creating-non-rectangular-headers/" target="_blank">Article on headers</a></div>
   <div class="cell nine nav"><ul>
   <!--scroll to named anchors-->
-  <li> <a href="#one">SVG</a></li> 
-  <li> <a href="#two">parallax</a></li>   
-  <li> <a href="#three">css transitions</a></li> 
+  <li> <a href="#one">SVG</a></li>
+  <li> <a href="#two">parallax</a></li>
+  <li> <a href="#three">css transitions</a></li>
   <li> <a href="#four">css keyframes</a></li>
   <li> <a href="#five">WOW</a></li>
   <li> <a href="#six">Clippy</a></li></ul> </div>
@@ -85,7 +85,7 @@ $(document).ready(function(){
 <div id="one"><h3>SVG animation | <a href="https://maxwellito.github.io/vivus-instant/" target="_blank">Vivus instant</a> is a tool for generating animated svg files. Draw in Illustrator, save as .svg, upload to Vivus, set parameters, and download animated file to your img folder.</h3>
  <div class="row">
  <div class="cell"><img src="img/Snowflake_2_animated.svg" alt="flake"/></div>
-  
+
   <div class="cell"><img src="img/arrows_animated.svg"/></div>
   <div class="cell"><img src="img/deer-black-silhouette_animated.svg" alt=""/></div>
   </div>
@@ -163,7 +163,7 @@ $(document).ready(function(){
 
 </div><!--end five-->
 
-<div id="six"><h3>Clipping Path | <a href="https://bennettfeely.com/clippy/" target="_blank">Generator</a></h3><div class="row" id="clippy"></div></div>
+<div id="six"><h3>Clipping Path | <a href="https://bennettfeely.com/clippy/" target="_blank">Generator</a></h3><div class="row" id="clippy"></div>
 </div><!--end container-->
 <div class="container-fluid hero"><!--note: concept of "container-fluid" borrowed from bootstrap and added here-->
 <h1> I am the hero, this is my journey</h1>
@@ -190,7 +190,7 @@ $(document).ready(function(){
 <!--Specifying cell any number of times divices into equal width columns with the calc function. Two cells make halves, three make thirds, and so on -->
   <div class="cell"><h2>Specifying "cell" any number of times divides into equal width columns... Two cells make halves, three make thirds, and so on</h2></div>
   <div class="cell">halves</div>
-</div> 
+</div>
 <div class="row">
   <div class="cell">thirds</div>
   <div class="cell">thirds</div>
@@ -211,7 +211,7 @@ $(document).ready(function(){
 <div class="row reverse">           <!--specify row and the class reverse to get row reverse-->
   <div class="cell">Reverse</div>
   <div class="cell">Row</div>
- 
+
 </div>
 
 <div class="row column">
@@ -226,9 +226,9 @@ $(document).ready(function(){
   <div class="cell">1</div>
   <div class="cell">2</div>
   <h3>Column reverse</h3>
-  
+
 </div><!--end row-->
-   
+
    <div class="row align-top">
   <div class="cell">
     Align Top
@@ -240,7 +240,7 @@ $(document).ready(function(){
     Grumpy wizards make...
   </div>
 </div>
-          
+
 <!-- Align Center -->
 <div class="row align-center">
   <div class="cell">
@@ -253,7 +253,7 @@ $(document).ready(function(){
     Grumpy wizards make...
   </div>
 </div>
-          
+
 <!-- Align Bottom -->
 <div class="row align-bottom">
   <div class="cell">
@@ -266,7 +266,7 @@ $(document).ready(function(){
     Grumpy wizards make...
   </div>
 </div>
-          
+
 <!-- Varied Alignment -->
 <div class="row">
   <div class="cell align-bottom">
@@ -279,7 +279,7 @@ $(document).ready(function(){
     Grumpy wizards make...
   </div>
 </div>
-          
+
 <!-- Align Text Baseline -->
 <div class="row align-baseline">
   <div class="cell">
@@ -312,7 +312,7 @@ $(document).ready(function(){
   <div class="cell two">Two</div>
   <div class="cell two">Three</div>
   <div class="cell two">Four</div>
- 
+
 </div>
 <h2>justify-end</h2>
 <div class="row justify-end">
@@ -327,7 +327,7 @@ $(document).ready(function(){
   <div class="cell two">Two</div>
   <div class="cell two">Three</div>
   <div class="cell two">Four</div>
- 
+
 </div>
 <h2>justify-space (between)</h2>
 <div class="row justify-space">
@@ -343,17 +343,17 @@ $(document).ready(function(){
   <div class="cell two">Two</div>
   <div class="cell two">Three</div>
   <div class="cell two">Four</div>
-  
-</div> 
-<hr class="eleven"> 
-<h2>GTFO! You can change the order for smaller screens by adding a class of 02-small (moves to second position, etc)</h2>       
+
+</div>
+<hr class="eleven">
+<h2>GTFO! You can change the order for smaller screens by adding a class of 02-small (moves to second position, etc)</h2>
   <div class="row grid-row">
   <div class="cell o3 o1-small">1</div><!--GTFO the order changes for smaller screens based on the small class-->
   <div class="cell o4 o2-small">2</div>
   <div class="cell o1 o3-small">3</div>
   <div class="cell o2 o4-small">4</div>
- 
-</div> 
+
+</div>
 	  </div>
     <!-- javascript -->
     <script type="text/javascript" src="js/rellax.js"></script>

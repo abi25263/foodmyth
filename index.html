@@ -9,18 +9,18 @@
     <!--google fonts here-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css">
     <!--thimble framework css here-->
-      <link rel="stylesheet" type="text/css" href="css/thimble.css">
+    <link rel="stylesheet" type="text/css" href="css/thimble.css">
     <!--animations for wow style sheet-->
     <link rel="stylesheet" href="css/animate.css">
-  <!--animate on scroll-->
-    <!-- my style sheet here-->
+    <!--animate on scroll-->
+    <!-- My style sheet here-->
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
 
     <!--link to jquery-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!--smooth scrolling-->
-<script>
+  <!--smooth scrolling-->
+  <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -58,67 +58,97 @@ $(document).ready(function(){
   </head>
 
   <body>
-    <!--hero section starts here  -->
-    <section id="intro">
-    <div class="myhero">
-    <h1> Hero image at the center</h1>
-    <div class="heroimg">
-    <img src="img/chicken.jpg" class="imgcenter" alt="chicken">
-    </div>
-    <p class="about"> Awesome All cool !! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo,
-      ex eu vehicula tempus, ex lectus ultricies metus, augue ut cursus lacinia,purus. </p>
-    </div>
-    </section>
-
-  <!--header section starts here
   <div class="header">
-  <div class="row_inner">
-  <div class="cell seven">Logo goes here <a href="https://css-tricks.com/creating-non-rectangular-headers/" target="_blank">Article on headers</a><ul>
-  scroll to named anchors
-  <li> <a href="#one">one</a></li>
-  <li> <a href="#two">two</a></li>
-  <li> <a href="#three">three</a></li>
-  <li> <a href="#four">four</a></li>
-  <li> <a href="#five">five</a></li>
-  <li> <a href="#six">six</a></li></ul>
-  </div>  end cell seven div
-  <div class="cell five nav"> </div>
 
-</div>
-</div>
-end header section-->
+    <div class="row_inner">
+    <!--specifying the numbers three and nine creates a twelve column layout...try five and seven if you like-->
+     <div class="cell five">
+       <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
 
-<!--background video-->
-<div class="container">
-<div id="one">
- <h1>SVG design goes here</h1>
-  <div class="row">
-    <div class="cell"><img src="img/Snowflake_2_animated.svg" alt="flake"/></div>
+     </div>
+    <div class="cell six">
+      <div class="tracking-in-expand-fwd"> EGGLOGY</div>
+      <p class="about">
+      Lorem ipsum dolor sit amet,reque dignissim accommodare vix no, an eos vero sale.
+      </p>
+    </div>
+    <div class="cell one nav">
+     <ul>
+      <li> <a href="#one">one</a></li>
+      <li> <a href="#two">two</a></li>
+      <li> <a href="#three">three</a></li>
+      <li> <a href="#four">four</a></li>
+      <li> <a href="#five">five</a></li>
+      <li> <a href="#six">six</a></li>
+     </ul>
+    </div>
 
-    <div class="cell"><h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc
-      itation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-      reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est </h3></div>
-    <div class="cell"><img src="img/Snowflake_2_animated.svg" alt="flake"/></div>
-  </div>
-</div>   <!--end one-->
-
-<div id="two">
-<h1>Parallax demo</h1>
-  <div class="row">
-  <div class="cell">
-    <div class="lg-green rellax"
-     data-rellax-speed="1">
-     <h4>SPEED 1 (-10 to +10)</h4>
     </div>
   </div>
-  </div>
-</div><!--end two-->
+<!--background video-->
 
+<!-- section one starts here -->
+<div class="container-fluid">
+    <div id="one">
+      <div class="row">
+        <div class="cell six">
+          <h1>In this section, it has the animation of egg walking from left to right</h1>
+          <div class="cell wow fadeInLeft" data-wow-delay="1s">or egg animation rolls in left<img src="img/doge_1.gif" alt=""/> </div>
+        </div>
+       <div class="cell three">
+        <img src="img/Snowflake_2_animated.svg" alt="flake"/>
+        <div class="cell three">
+          <div id="slide-left"> In this paragraph it will tell the good things about the egg</div></div>
+      </div>
+      </div>
+  </div>   <!--end one-->
+
+    <!-- section two starts here -->
+    <div id="two">
+      <div class="pimg1">
+       <div class="ptext">
+        <span class="border">
+          Two ...parallex website
+        </span>
+        </div>
+      </div>
+      <section class="section section-dark">
+        <p class="paraeffect"> Lorem ipsum dolor sit amet, consectetur adipisicing voluptatum nam obcaecati esse earum facere non! Autem facilis velit pariatur repudiandae inventore provident, odio ad? Dolor similique neque ipsa aliquid earum consequatur dicta culpa cupiditate quia illum. Nesciunt quidem ab est voluptatibus itaque molestias, provident beatae facere repellat officia animi consequuntur perspiciatis dignissimos, optio aut ducimus debitis praesentium a deserunt error! Modi quis iure quisquam, atur bitis sequi!</p>
+      </section>
+      <div class="pimg1">
+       <div class="ptext">
+        <span class="border">
+          parallex website
+        </span>
+        </div>
+      </div>
+      <section class="section section-dark">
+        <p class="paraeffect"> Lorem ipsum dolor sit amsquam, et, excepturi pariatur, quos molestiae aspernatur quo deleniti aut similique sit ea cum nesciunt doloremque voluptatum facilis aperiam molestias a corrupti debitis sequi!</p>
+      </section>
+    </div><!--end two-->
+
+<!--myth vs truth section here  -->
+<div class="container-fluid">
 <div id="three">
-	<h1>three</h1>
+  <div class="row">
+    <div class="cell six">
+    <!-- <h1 class="big1"> MYTH Vs TRUTH</h1> -->
+
+      <h4 class="h4block pie">Myth one goes here</h3>
+
+
+</div>
+<div class="cell six">
+  <img src="img/Snowflake_2_animated.svg" alt="flake"/>
+</div>
+<div class="cell six">
+  <h4 class="h4block pie"> TRUTH goes here</h3>
+</div>
+</div>
 </div><!--end three-->
+</div>
+
+
 	  <div id="four">
 	  <h1>four</h1>
 </div><!--end four-->
@@ -131,10 +161,10 @@ end header section-->
 
 	<h1>six</h1>
 </div><!--end six-->
-</div><!--end container-->
+</div><!--end container fluid-->
 
 
-    <!-- javascript goes here -->
+    <!-- javascript -->
     <script type="text/javascript" src="js/rellax.js"></script>
     <script>
     	var rellax = new Rellax('.rellax', {
