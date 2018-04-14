@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Eggology</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!--google fonts here-->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css">
+    <!--thimble framework css here-->
+    <link rel="stylesheet" type="text/css" href="css/thimble.css">
+    <!--animations for wow style sheet-->
+    <link rel="stylesheet" href="css/animate.css">
+    <!--animate on scroll-->
+    <!-- My style sheet here-->
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+
+    <!--link to jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!--smooth scrolling-->
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+   <!--wow animatons-->
+   <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <div class="header">
+    <div class="row_inner">
+     <div class="cell five">
+       <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+     </div>
+    <div class="cell six">
+      <div class="tracking-in-expand-fwd"> EGGLOGY</div>
+      <p class="about">
+      Lorem ipsum dolor sit amet,reque dignissim accommodare vix no, an eos vero sale.
+      </p>
+    </div>
+    <div class="cell one nav">
+     <ul>
+      <li> <a href="#one">one</a></li>
+      <li> <a href="#two">two</a></li>
+      <li> <a href="#three">three</a></li>
+      <li> <a href="#four">four</a></li>
+      <li> <a href="#five">five</a></li>
+      <li> <a href="#six">six</a></li>
+     </ul>
+    </div>
+
+    </div>
+  </div>
+<!--background video-->
+
+<!-- section one starts here -->
+<div class="container-fluid">
+    <div id="one">
+      <div class="row">
+          <div class="cell wow fadeInLeft" data-wow-delay="1s">Egg animation rolls in left
+            <img src="./img/doge_1.gif" alt=""/> </div>
+       <div class="cell">
+        <img src="./img/eggfly.gif" class="imgcenter" alt="eggfly" />
+       </div>
+       </div>
+       <div class="row">
+        <div class="cell">
+          <div id="slide-left"> In this paragraph it will tell the good things about the egg</div></div>
+      </div>
+      </div>
+  </div>   <!--end one-->
+
+    <!-- section two starts here -->
+    <div class="container-fluid">
+    <div id="two">
+      <div class="pimg1">
+       <div class="ptext">
+        <span class="border">
+          Two ...parallex website
+        </span>
+        </div>
+      </div>
+      <section class="section section-dark">
+        <p class="paraeffect"> Lorem ipsum dolor sit amet, consectetur adipisicing voluptatum nam obcaecati esse earum facere non! Autem facilis velit pariatur repudiandae inventore provident, odio ad? Dolor similique neque ipsa aliquid earum consequatur dicta culpa cupiditate quia illum. Nesciunt quidem ab est voluptatibus itaque molestias, provident beatae facere repellat officia animi consequuntur perspiciatis dignissimos, optio aut ducimus debitis praesentium a deserunt error! Modi quis iure quisquam, atur bitis sequi!</p>
+      </section>
+      <div class="pimg1">
+       <div class="ptext">
+        <span class="border">
+          parallex website
+        </span>
+        </div>
+      </div>
+      <section class="section section-dark">
+        <p class="paraeffect"> Lorem ipsum dolor sit amsquam, et, excepturi pariatur, quos molestiae aspernatur quo deleniti aut similique sit ea cum nesciunt doloremque voluptatum facilis aperiam molestias a corrupti debitis sequi!</p>
+      </section>
+    </div><!--end two-->
+    </div>
+
+<!--myth vs truth section here  -->
+<div class="container-fluid">
+<div id="three">
+  <div class="row">
+    <div class="cell">
+      <h4 class="h4block pie">MYTH goes here</h4>
+      </div>
+    <div class="cell">
+        <img src="./img/egg_animation.gif" alt="egg1"/>
+    </div>
+  </div>
+<div class="row">
+  <div class="cell"></div>
+<div class="cell">
+  <h4 class="h4block pie"> TRUTH goes here</h4>
+</div>
+</div>
+</div><!--end three-->
+</div>
+
+
+	  <div id="four">
+	  <h1>four</h1>
+</div><!--end four-->
+<div id="five">
+<h1>five</h1>
+
+</div><!--end five-->
+
+<div id="six">
+
+	<h1>six</h1>
+</div><!--end six-->
+</div><!--end container fluid-->
+
+
+    <!-- javascript -->
+    <script type="text/javascript" src="js/rellax.js"></script>
+    <script>
+    	var rellax = new Rellax('.rellax', {
+        // center: true
+        callback: function(position) {
+            // callback every position change
+            console.log(position);
+        }
+      });
+    </script>
+
+
+  </body>
+</html>

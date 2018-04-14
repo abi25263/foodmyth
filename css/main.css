@@ -31,13 +31,13 @@ a:visited {
 
 
 /*structural units*/
-.header {height: 200px;
-  background:orange;/*edit here */
+.header {height: 400px;
+  background:orange;
   clip-path: polygon(
     0 0,
     100% 0,
     100% 100%,
-    0 calc(100% - 5vw)
+    0 calc(100% - 6vw)
   ); position:fixed;top:0px; left:0px; width:100%; z-index: 100; }
 
 .hero {margin-top:100px;background:pink; min-height:400px;}
@@ -63,7 +63,7 @@ a.levitate:hover{transform:scale(1.1); -webkit-box-shadow: 0 0 20px 5px rgba(0,0
 	box-shadow: 0 0 20px 5px rgba(0,0,0,.5); }
 
 /*bg video*/
-video#bgvid { 
+video#bgvid {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -77,16 +77,16 @@ video#bgvid {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background: url(clouds.jpg) no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 #video {height: 100vh;
 }
 
 
 /**
- 
- * css keyframe animation 
- 
+
+ * css keyframe animation
+
  */
 #slide {
     width: 100px;
@@ -167,10 +167,5 @@ Phones
 ------------------------------------*/
 
 @media (max-width: 480px) {
-	
+
 }
-
-
-
-
-

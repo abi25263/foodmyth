@@ -3,24 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Eggology</title>
+    <title>All about eggs</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <!--google fonts here-->
+<!--google fonts here-->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css">
-    <!--thimble framework css here-->
-    <link rel="stylesheet" type="text/css" href="css/thimble.css">
-    <!--animations for wow style sheet-->
-    <link rel="stylesheet" href="css/animate.css">
-    <!--animate on scroll-->
-    <!-- My style sheet here-->
+<!--thimble framework css here-->
+      <link rel="stylesheet" type="text/css" href="css/thimble.css">
+<!--animations for wow style sheet-->
+<link rel="stylesheet" href="css/animate.css">
+  <!--animate on scroll-->
+<!-- Your Styles  go here-->
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <!-- delighters css here -->
+      <link rel="stylesheet" type="text/css" href="css/delighter.css">
+      <!-- custom cursor link here -->
+      <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/food/foo-1/foo80.cur), auto !important;}</style><a href="http://www.cursors-4u.com/cursor/2006/03/04/foo80.html" target="_blank" title="Eggs Sunny Side Up"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Eggs Sunny Side Up" style="position:absolute; top: 0px; right: 0px;" /></a>
 
     <!--link to jquery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- font awesome link here -->
+<link rel="stylesheet" href="css/fontawesome.min.css">
+<!--font awesome script here  -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<!--delighters script  -->
+<script type="text/javascript" src="delighters.js">
 
-  <!--smooth scrolling-->
-  <script>
+
+<!--smooth scrolling-->
+<script>
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -58,109 +69,266 @@ $(document).ready(function(){
   </head>
 
   <body>
-  <div class="header">
+    <!-- header section starts here -->
+    <div class="header">
+      <div class="row_inner">
+       <!-- <div class="cell five">
+         <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+       </div>-->
+      <div class="cell eleven">
+        <h1 class="huge"> EGGLOGY</h1>
+        <div id= "anim-one">  Lorem ipsum dolor sit amet,reque dignissim accommodare vix no, an eos vero sale.
+        <!-- <p class="about"></p>   -->
+      </div>
+      </div>
+      <div class="cell one nav">
+       <ul>
+        <li> <a href="#one">one</a></li>
+        <li> <a href="#two">two</a></li>
+        <li> <a href="#three">three</a></li>
+        <li> <a href="#four">four</a></li>
+        <li> <a href="#five">five</a></li>
+        <li> <a href="#six">six</a></li>
+       </ul>
+      </div>
+      </div>
 
-    <div class="row_inner">
-    <!--specifying the numbers three and nine creates a twelve column layout...try five and seven if you like-->
-     <div class="cell five">
-       <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+    </div>
+    <!-- header section ends -->
 
-     </div>
-    <div class="cell six">
-      <div class="tracking-in-expand-fwd"> EGGLOGY</div>
-      <p class="about">
-      Lorem ipsum dolor sit amet,reque dignissim accommodare vix no, an eos vero sale.
+<!--background video-->
+<div class="container">
+
+
+<div class="row">
+  <div class="cell twelve">
+    <div class="kenburns-top">
+      <img src="./img/egg_animation.gif" class="heroimage" alt="chicken"></div>
+      <p>
+        Paragraph goes here
       </p>
-    </div>
-    <div class="cell one nav">
-     <ul>
-      <li> <a href="#one">one</a></li>
-      <li> <a href="#two">two</a></li>
-      <li> <a href="#three">three</a></li>
-      <li> <a href="#four">four</a></li>
-      <li> <a href="#five">five</a></li>
-      <li> <a href="#six">six</a></li>
-     </ul>
-    </div>
+  </div>
 
+</div>
+</div>
+
+<!--section one starts here - about eggs -->
+<div class="container">
+  <div class="panel" data-color="violet">
+<div id="one">
+
+  <div class="row-column">
+    <div class="cell wow fadeInRight" data-wow-delay="2s"><img src="img/eggfly.gif" alt=""/></div>
+    <div class="cell">
+      <div class="cell wow fadeInLeft" data-wow-delay="2s">
+        <p class="big1"> Eggs are among the most nutritious foods on the planet, containing a little bit of almost every nutrient we need. Omega-3 enriched and/or pastured eggs are even healthier.
+</p>
+      </div>
     </div>
   </div>
-<!--background video-->
+	  </div>   <!--end one-->
+    </div>
+    <!--section one ends  -->
 
-<!-- section one starts here -->
-<div class="container-fluid">
-    <div id="one">
-      <div class="row">
-        <div class="cell six">
-          <div class="cell wow fadeInLeft" data-wow-delay="1s">or egg animation rolls in left<img src="./img/doge_1.gif" alt=""/> </div>
-        </div>
-       <div class="cell three">
-        <img src="img/Snowflake_2_animated.svg" alt="flake"/>
-        <div class="cell three">
-          <div id="slide-left"> In this paragraph it will tell the good things about the egg</div></div>
-      </div>
-      </div>
-  </div>   <!--end one-->
-
-    <!-- section two starts here -->
+    <!-- section two starts here - myth vs truth section -->
+    <div class="panel" data-color="indigo">
     <div id="two">
-      <div class="pimg1">
-       <div class="ptext">
-        <span class="border">
-          Two ...parallex website
-        </span>
+      <div class="row">
+        <div class="cell"><h1> Myth one</h1>
+          <p> EGG YOLKS ARE UNHEALTHY</p>
         </div>
-      </div>
-      <section class="section section-dark">
-        <p class="paraeffect"> Lorem ipsum dolor sit amet, consectetur adipisicing voluptatum nam obcaecati esse earum facere non! Autem facilis velit pariatur repudiandae inventore provident, odio ad? Dolor similique neque ipsa aliquid earum consequatur dicta culpa cupiditate quia illum. Nesciunt quidem ab est voluptatibus itaque molestias, provident beatae facere repellat officia animi consequuntur perspiciatis dignissimos, optio aut ducimus debitis praesentium a deserunt error! Modi quis iure quisquam, atur bitis sequi!</p>
-      </section>
-      <div class="pimg1">
-       <div class="ptext">
-        <span class="border">
-          parallex website
-        </span>
-        </div>
-      </div>
-      <section class="section section-dark">
-        <p class="paraeffect"> Lorem ipsum dolor sit amsquam, et, excepturi pariatur, quos molestiae aspernatur quo deleniti aut similique sit ea cum nesciunt doloremque voluptatum facilis aperiam molestias a corrupti debitis sequi!</p>
-      </section>
-    </div><!--end two-->
+        <div class="cell"> <img src="./img/chicken.jpg" class="imgcenter" alt="chicken"></div>
+        <div class="cell">
+          <p class="big2">
+            If you’ve been restricting your breakfast options to an egg-white omelet, you may be
+             suffering needlessly. Egg yolks do contain more fat and cholesterol than egg whites,
+              but studies over the last few decades have shown that a) not all fat is bad
+              for you; and b) consuming foods high in cholesterol does not necessarily
+              translate to having higher blood cholesterol, although there are still groups,
+              especially diabetics and those with heart disease, who are recommended to abstain.
 
-<!--myth vs truth section here  -->
-<div class="container-fluid">
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell"><h1> Myth two</h1>
+          <p> CAGE-FREE FARMING IS MORE HUMANE</p>
+        </div>
+        <div class="cell"> <img src="./img/chicken.jpg" class="imgcenter" alt="chicken"></div>
+        <div class="cell">
+          <p class="big2">
+            "Cage-free," "free-range," and "humanely raised" are not the same thing.
+            Chickens on so-called "cage-free" farms are usually crowded into pens, which are
+            essentially just big cages. To keep the crowded birds from hurting each other, many
+            producers cut or burn off the sharper parts of the hens’ beaks when they’re still
+            young. And most kill male chicks as soon as they’re born, since they have no
+            commercial value. If you want to be sure that your eggs come from happy chickens,
+            look for the Certified Humane label or buy your eggs from small, local farms.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell"><h1> Myth three</h1>
+          <p> BROWN CHICKENS LAY BROWN EGGS</p>
+        </div>
+        <div class="cell"> <img src="./img/chicken.jpg" class="imgcenter" alt="chicken"></div>
+        <div class="cell">
+          <p class="big2">
+            The color of the egg is related to the color of the chicken—just not its feathers.
+            Brown eggs tend to come from chickens with red earlobes (yes! Earlobes!). White eggs
+             generally come from chickens with white earlobes. The next time you see a hen,
+             take a look and see if you can guess what color her eggs will be (although there
+              are always exceptions to this rule, so perhaps don't bet any money on it).
+          </p>
+        </div>
+      </div>
+
+</div><!--end two-->
+  </div>
+  <!--section two ends  -->
+
+<!-- section three starts here - health benefits goes here-->
+<div class="panel" data-color="blue">
+
+
 <div id="three">
+  <div class="row-column">
+    <div class="cell">
+      <h1> Health benefits of egg</h1>
+    </div>
+  </div>
   <div class="row">
-    <div class="cell six">
-    <!-- <h1 class="big1"> MYTH Vs TRUTH</h1> -->
-
-      <h4 class="h4block pie">Myth one goes here</h4>
-
-
-</div>
-<div class="cell six">
-  <img src="./img/egg_animation.gif" alt="egg1"/>
-</div>
-<div class="cell six">
-  <h4 class="h4block pie"> TRUTH goes here</h4>
-</div>
-</div>
+    <div class="cell">
+      <div id="anim-four">
+       <div class="heart"><i class="fas fa-heart"></i></div>
+     </div>
+      <!-- <img src="./img/chicken.jpg" class="imgcenter" alt="chicken"> -->
+    </div>
+    <div class="cell">
+      <ul>
+       <li> Eggs are incredibly nutritious </li>
+       <li> Eggs Raise HDL "the good" Cholesterol </li>
+       <li>  Eggs Contain Choline — an Important Nutrient That Most People Don't Get Enough Of</li>
+       <li> Eggs Contain Lutein and Zeaxanthin, Antioxidants That Have Major Benefits for Eye Health </li>
+       <li> In the Case of Omega-3 or Pastured Eggs, They Lower Triglycerides as Well </li>
+       <li> Eggs Are High in Quality Protein, With All the Essential Amino Acids in the Right Ratios</li>
+       <li> Eggs Do NOT Raise Your Risk of Heart Disease and May Reduce the Risk of Stroke</li>
+       <li> Eggs Are Highly Fulfilling and Tend to Make You Eat Fewer Calories, Helping You Lose Weight</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row-column">
+    <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+  </div>
 </div><!--end three-->
 </div>
+<!-- section three ends -->
+
+<!--Section four starts here - types of eggs section  -->
+<div class="panel" data-color="green">
 
 
 	  <div id="four">
-	  <h1>four</h1>
+      <div class="row-column">
+        <div class="cell">
+          <h1> Different types of eggs</h1>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <h1> Standard White Eggs</h1>
+            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+            <p>These eggs come from white hens that are typically raised in conventional housing systems.  Conventional housing has
+               been the standard for decades, but the Alberta egg industry has begun to transition away from conventional housing systems.</p>
+          </div>
+          <div class="cell">
+            <h1> Standard Brown Eggs</h1>
+            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+            <p> These eggs come from brown hens that are typically raised in conventional housing systems.  Conventional
+              housing has been the standard for decades, but the Alberta egg industry has begun to transition away from conventional housing systems.</p>
+          </div>
+          <div class="cell">
+            <h1> Free-Run Eggs</h1>
+            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+            <p>
+              These eggs come from hens that are raised in free-run (barn or aviary) housing systems.
+              Free-run systems allow the hens to roam freely within an enclosed barn, while also providing a variety of enrichments such as nesting boxes and perches
+            </p>
+          </div>
+          <div class="cell">
+            <h1> Free-Range Eggs</h1>
+            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+            <p> These eggs come from hens that are raised in free-run (barn or aviary) housing systems, which also provide access to outdoor runs (when weather permits).
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cell">
+            <h1> Organic Eggs</h1>
+            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+            <p>These eggs come from hens that are raised in free-range housing systems.  The hens are only provided feed that has been certified organic,
+              which means that it only contains ingredients that were grown without pesticides, herbicides or commercial fertilizer.
+              Look for a certified organic symbol on the egg carton.</p>
+          </div>
+          <div class="cell">
+            <h1> Omega-3 Eggs</h1>
+            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+            <p> These eggs come from hens that were provided feed containing extra flax (up to 10-20%).  As a result, the eggs laid by these hens
+              contain more Omega-3 fatty acids.</p>
+          </div>
+          <div class="cell">
+            <h1> Vitamin-Enhanced Eggs</h1>
+            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+            <p>
+              These eggs come from hens that were provided feed that was nutritionally enhanced to include higher levels of certain vitamins (ie: Vitamin D or
+              Vitamin E).  As a result, the eggs laid by these hens contain corresponding higher amounts of the particular vitamin(s).</p>
+          </div>
+          <div class="cell">
+            <h1> Vegetarian Eggs</h1>
+            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+            <p> These eggs come from hens that were provided feed containing only plant-based ingredients.
+            </p>
+          </div>
+        </div>
+      </div>
+
 </div><!--end four-->
+</div>
+<!--section four ends  -->
+
+<!-- section five starts here - recipe section here-->
+<div class="panel" data-color="yellow">
+
+
 <div id="five">
 <h1>five</h1>
 
 </div><!--end five-->
+</div>
+<!--section five ends  -->
+
+<!-- section six starts here - resources section here -->
+<div class="panel" data-color="red">
 
 <div id="six">
-
-	<h1>six</h1>
+<div class="row-column">
+  <div class="cell">
+  <h1> Links goes here</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="cell">
+  <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+  <h1> Ralph</h1>
+  </div>
+  <div class="cell">
+    <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
+    <h1> Abi Babu</h1>
+  </div>
+</div>
 </div><!--end six-->
-</div><!--end container fluid-->
+</div>
+<!--section six ends  -->
+</div><!--end main container-->
 
 
     <!-- javascript -->
@@ -173,6 +341,40 @@ $(document).ready(function(){
             console.log(position);
         }
       });
+    </script>
+
+    <!-- magic colors on background code here -->
+
+    <script>
+    $(window).scroll(function() {
+
+// selectors
+var $window = $(window),
+    $body = $('body'),
+    $panel = $('.panel');
+
+// Change 33% earlier than scroll position so colour is there when you arrive.
+var scroll = $window.scrollTop() + ($window.height() / 3);
+
+$panel.each(function () {
+  var $this = $(this);
+
+  // if position is within range of this panel.
+  // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
+  // Remember we set the scroll to 33% earlier in scroll var.
+  if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+    // Remove all classes on body with color-
+    $body.removeClass(function (index, css) {
+      return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
+    });
+
+    // Add class of currently active div
+    $body.addClass('color-' + $(this).data('color'));
+  }
+});
+
+}).scroll();
     </script>
 
 
