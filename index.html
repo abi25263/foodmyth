@@ -13,6 +13,8 @@
 <!--animations for wow style sheet-->
 <link rel="stylesheet" href="css/animate.css">
   <!--animate on scroll-->
+  <!--typing style sheet here  -->
+  <link rel="stylesheet" href="css/typing.css">
 <!-- Your Styles  go here-->
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <!-- delighters css here -->
@@ -30,6 +32,8 @@
 <script type="text/javascript" scr="index.js"></script>
 <!--delighters script  -->
 <script type="text/javascript" src="delighters.js"></script>
+<!-- typing effect script here -->
+<script src="typing.js"></script>
 
 
 
@@ -89,16 +93,7 @@ $(document).ready(function(){
   <div class="cloud right flip"></div>
   <div class="cloud left bigger lower faster flip"></div>
   <div class="mountains"></div>
-  <div class="cell one nav">
-   <ul>
-    <li> <a href="#one">one</a></li>
-    <li> <a href="#two">two</a></li>
-    <li> <a href="#three">three</a></li>
-    <li> <a href="#four">four</a></li>
-    <li> <a href="#five">five</a></li>
-    <li> <a href="#six">six</a></li>
-   </ul>
-  </div>
+
 
   <div id= "anim-one">  Lorem ipsum dolor sit amet,reque dignissim accommodare vix no, an eos vero sale.
   <!-- <p class="about"></p>   -->
@@ -108,13 +103,23 @@ $(document).ready(function(){
         <h1 class="huge"> EGGLOGY</h1>
 
       </div>
+      <div class="cell one nav">
+       <ul>
+        <li> <a href="#one">one</a></li>
+        <li> <a href="#two">two</a></li>
+        <li> <a href="#three">three</a></li>
+        <li> <a href="#four">four</a></li>
+        <li> <a href="#five">five</a></li>
+        <li> <a href="#six">six</a></li>
+       </ul>
+      </div>
 
       </div>
 
     </div>
     <!-- header section ends -->
     <!-- vertical sticky nav -->
-    <nav id="cd-vertical-nav">
+    <!-- <nav id="cd-vertical-nav">
 		<ul>
 			<li>
 				<a href="#section1" data-number="1">
@@ -154,22 +159,18 @@ $(document).ready(function(){
 			</li>
 		</ul>
 	</nav>
-	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a> -->
 <!-- end scroll section -->
 
 <!--background video-->
-<div class="container-fluid">
 
-
+<div class="container-fluid" id="hen">
 <div class="row">
   <div class="cell twelve">
     <div class="kenburns-top">
-      <img src="./img/freerange.jpg" class="heroimage" alt="chicken"> </div>
-      <p>
-        Paragraph goes here
-      </p>
+      <img src="./img/freerange.jpg" class="heroimage" alt="chicken"></div>
+      <div class="centered">Eggs are among the most nutritious foods on the planet, containing a little bit of almost every nutrient we need. Omega-3 enriched and/or pastured eggs are even healthier.</div>
   </div>
-
 </div>
 </div>
 
@@ -194,13 +195,15 @@ $(document).ready(function(){
     <!-- section two starts here - myth vs truth section -->
     <div class="panel" data-color="indigo">
     <div id="two">
-      <div class="row">
-        <div class="cell"><h1> Myth one</h1>
-          <p> EGG YOLKS ARE UNHEALTHY</p>
+      <div class="row-column">
+        <div class="cell"><h1 class="myth">EGG YOLKS ARE UNHEALTHY </h1>
         </div>
+        </div>
+      <div class="row">
         <div class="cell"> <img src="./img/chicken.jpg" class="imgcenter" alt="chicken"></div>
         <div class="cell">
-          <p class="big2">
+          <div class="cell wow fadeInRight" data-wow-delay="2s">
+          <p class="big1">
             If you’ve been restricting your breakfast options to an egg-white omelet, you may be
              suffering needlessly. Egg yolks do contain more fat and cholesterol than egg whites,
               but studies over the last few decades have shown that a) not all fat is bad
@@ -209,12 +212,15 @@ $(document).ready(function(){
               especially diabetics and those with heart disease, who are recommended to abstain.
 
           </p>
+        </div>  <!--relax div-->
+        </div>
+          </div>
+
+      <div class="row-column">
+        <div class="cell"><h1 class="myth"> CAGE-FREE FARMING IS MORE HUMANE</h1>
         </div>
       </div>
       <div class="row">
-        <div class="cell"><h1> Myth two</h1>
-          <p> CAGE-FREE FARMING IS MORE HUMANE</p>
-        </div>
         <div class="cell"> <img src="./img/chicken.jpg" class="imgcenter" alt="chicken"></div>
         <div class="cell">
           <p class="big2">
@@ -228,10 +234,12 @@ $(document).ready(function(){
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="cell"><h1> Myth three</h1>
-          <p> BROWN CHICKENS LAY BROWN EGGS</p>
+      <div class="row-column">
+        <div class="cell"><h1 class="myth"> BROWN CHICKENS LAY BROWN EGGS</h1>
+          <p> </p>
         </div>
+      </div>
+      <div class="row">
         <div class="cell"> <img src="./img/chicken.jpg" class="imgcenter" alt="chicken"></div>
         <div class="cell">
           <p class="big2">
@@ -255,7 +263,7 @@ $(document).ready(function(){
 <div id="three">
   <div class="row-column">
     <div class="cell">
-      <h1 data-delighter class="right"> Health benefits of egg</h1>
+      <h1 class="myth"> Health benefits of egg</h1>
     </div>
   </div>
   <div class="row">
@@ -282,6 +290,24 @@ $(document).ready(function(){
   <div class="row-column">
     <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
   </div>
+  <!--video test here  -->
+  <div id="videoDiv">
+<div id="videoBlock">
+<video preload="preload"  id="video" autoplay="autoplay" loop="loop">
+  <source src="img/clouds.webm" type="video/webm"> </source>
+  <source src="img/clouds.mp4" type="video/mp4"> </source>
+</video>
+<div id="videoMessage">
+<!-- <h1 class="spacer">The Early Bird...</h1> -->
+<!-- <h2 class="spacer">...has the best holiday.</h2> -->
+<h3 class="spacer">Video here</h3>
+<!-- <p class="videoClick" >
+<a href="https://www.hotelsafloat.com/home-away.php">Click here and be impressed</a>
+</p> -->
+</div>
+</div>
+</div>
+<!--end video test  -->
 </div><!--end three-->
 </div>
 <!-- section three ends -->
@@ -293,7 +319,7 @@ $(document).ready(function(){
 	  <div id="four">
       <div class="row-column">
         <div class="cell">
-          <h1> Different types of eggs</h1>
+          <h1 class="myth"> Different types of eggs</h1>
         </div>
         <div class="row">
           <div class="cell">
@@ -374,7 +400,7 @@ $(document).ready(function(){
 <div id="six">
 <div class="row-column">
   <div class="cell">
-  <h1> Links goes here</h1>
+  <h1> Links and resources goes here</h1>
   </div>
 </div>
 <div class="row">
@@ -437,6 +463,52 @@ $panel.each(function () {
 });
 
 }).scroll();
+    </script>
+
+    <!-- typing script here -->
+    <script>
+    document.addEventListener('DOMContentLoaded',function(event){
+// array with texts to type in typewriter
+var dataText = ["Egg yolk is unhealthy!"];
+
+// type one text in the typwriter
+// keeps calling itself until the text is finished
+function typeWriter(text, i, fnCallback) {
+  // chekc if text isn't finished yet
+  if (i < (text.length)) {
+    // add next character to h1
+   document.querySelector(".myth").innerHTML = text.substring(0, i+1) +'<span aria-hidden="true"></span>';
+
+    // wait for a while and call this function again for next character
+    setTimeout(function() {
+      typeWriter(text, i + 1, fnCallback)
+    }, 100);
+  }
+  // text finished, call callback if there is a callback function
+  else if (typeof fnCallback == 'function') {
+    // call callback after timeout
+    setTimeout(fnCallback, 700);
+  }
+}
+// start a typewriter animation for a text in the dataText array
+ function StartTextAnimation(i) {
+   if (typeof dataText[i] == 'undefined'){
+      setTimeout(function() {
+        StartTextAnimation(0);
+      }, 20000);
+   }
+   // check if dataText[i] exists
+  if (i < dataText[i].length) {
+    // text exists! start typewriter animation
+   typeWriter(dataText[i], 0, function(){
+     // after callback (and whole text has been animated), start next text
+     StartTextAnimation(i + 1);
+   });
+  }
+}
+// start the text animation
+StartTextAnimation(0);
+});
     </script>
 
 

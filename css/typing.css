@@ -1,0 +1,20 @@
+
+
+.myth {
+  font-size: 3.5em;
+  color: #ffce09;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'tradegothiclt-bold', sans-serif;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
