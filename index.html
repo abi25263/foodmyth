@@ -21,6 +21,10 @@
       <link rel="stylesheet" type="text/css" href="css/delighter.css">
       <!-- link for google fonts -->
       <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      <!-- vertical nav link here -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+      <link rel="stylesheet" type="text/css" href="css/vertical.css">
+
 
       <!-- custom cursor link here -->
       <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/food/foo-1/foo80.cur), auto !important;}</style><a href="http://www.cursors-4u.com/cursor/2006/03/04/foo80.html" target="_blank" title="Eggs Sunny Side Up"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Eggs Sunny Side Up" style="position:absolute; top: 0px; right: 0px;" /></a>
@@ -32,11 +36,13 @@
 <!--font awesome script here  -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
 <!-- vertical scroll script here -->
-<script type="text/javascript" scr="index.js"></script>
+<script type="text/javascript" scr="js/index.js"></script>
 <!--delighters script  -->
-<script type="text/javascript" src="delighters.js"></script>
+<script type="text/javascript" src="js/delighters.js"></script>
 <!-- typing effect script here -->
 <script src="typing.js"></script>
+
+
 
 
 
@@ -94,81 +100,69 @@ $(document).ready(function(){
   <div class="sun"></div>
   <div class="cloud left"></div>
   <div class="cloud right flip"></div>
-  <div class="cloud left bigger lower faster flip"></div>
-  <!-- <img src="./img/logo.png" class="imgcenter" alt="chicken"> -->
+  <!-- <div class="cloud left bigger lower faster flip"></div> -->
+  <img src="./img/logo.png" class="imgcenter" alt="chicken">
   <div class="mountains"></div>
 
 
-  <div id= "anim-one">  "Eggs Are Nearly as Bad for Your Arteries as Cigarettes"
+  <!-- <div id= "anim-one">  "Eggs Are Nearly as Bad for Your Arteries as Cigarettes" -->
   <!-- <p class="about"></p>   -->
-</div>
+<!-- </div> -->
 </div>
 <!-- end css animation header -->
-        <!-- <h1 class="huge"> EGGLOGY</h1> -->
 
       </div>
-      <div class="cell one nav">
-       <ul>
-        <li> <a href="#one">one</a></li>
-        <li> <a href="#two">two</a></li>
-        <li> <a href="#three">three</a></li>
-        <li> <a href="#four">four</a></li>
-        <li> <a href="#five">five</a></li>
-        <li> <a href="#six">six</a></li>
-       </ul>
-      </div>
-
       </div>
 
     </div>
     <!-- header section ends -->
     <!-- vertical sticky nav -->
-    <!-- <nav id="cd-vertical-nav">
+    <nav id="cd-vertical-nav">
 		<ul>
 			<li>
-				<a href="#section1" data-number="1">
+				<a href="#one" data-number="1">
 					<span class="cd-dot"></span>
-					<span class="cd-label">Intro</span>
+					<span class="cd-label">History</span>
 				</a>
 			</li>
 			<li>
-				<a href="#section2" data-number="2">
+				<a href="#two" data-number="2">
 					<span class="cd-dot"></span>
-					<span class="cd-label">About</span>
+					<span class="cd-label">Myth Vs Truth</span>
 				</a>
 			</li>
 			<li>
-				<a href="#section3" data-number="3">
+				<a href="#three" data-number="3">
 					<span class="cd-dot"></span>
-					<span class="cd-label">Features</span>
+					<span class="cd-label">Health Benefits</span>
 				</a>
 			</li>
 			<li>
-				<a href="#section4" data-number="4">
+				<a href="#four" data-number="4">
 					<span class="cd-dot"></span>
-					<span class="cd-label">Portfolio</span>
+					<span class="cd-label">Types of eggs</span>
 				</a>
 			</li>
 			<li>
-				<a href="#section5" data-number="5">
+				<a href="#five" data-number="5">
 					<span class="cd-dot"></span>
-					<span class="cd-label">Pricing</span>
+					<span class="cd-label">Receipe</span>
 				</a>
 			</li>
 			<li>
-				<a href="#section6" data-number="6">
+				<a href="#six" data-number="6">
 					<span class="cd-dot"></span>
 					<span class="cd-label">Contact</span>
 				</a>
 			</li>
 		</ul>
 	</nav>
-	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a> -->
+	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
 <!-- end scroll section -->
 
 <!--background video-->
-
-<div class="container-fluid" id="hen">
+<!--hero image section  -->
+<!-- <div class="container-fluid" id="hen">
 <div class="row">
   <div class="cell twelve">
     <div class="kenburns-top">
@@ -176,19 +170,62 @@ $(document).ready(function(){
       <div class="centered">National headlines reported, “Egg yolks almost as bad as smoking”, and finally, “What do egg yolks and cigarettes have in common?” We are once again left confused, and wondering if that three-egg omelet is really a good idea after all?</div>
   </div>
 </div>
-</div>
+</div> -->
 
-<!--section one starts here - about eggs -->
+<!--section one starts here - history of eggs -->
 <div class="container">
   <div class="panel" data-color="violet">
 <div id="one" >
-
-  <div class="row-column">
-    <div class="cell wow fadeInRight" data-wow-delay="2s"><img src="img/animation1.gif" alt=""/></div>
+  <h1 class="type1"> The History of the Egg</h1>
+  <div class="row">
+    <div class="cell wow fadeInRight" data-wow-delay="2s"><img src="img/doge_1.gif" alt=""/>
+  <p class="big1">  Most laying hens in the U.S. are Single-Comb White Leghorns.
+  Egg farms were still mostly backyard systems that supplied families with eggs. Any extras were sold at the local farmers’
+  markets. As selling eggs became profitable, some farms started building up flocks of about 400 hens. The hens roamed around
+  outside with a coop for roosting.</p>
+    </div>
     <div class="cell">
       <div class="cell wow fadeInLeft" data-wow-delay="1s">
-        <p class="big1"> Eggs are among the most nutritious foods on the planet, containing a little bit of almost every nutrient we need. Omega-3 enriched and/or pastured eggs are even healthier.
-</p>
+        <h2> Anicent times egg production</h2>
+        <p class="big1"> East Indian history indicates that wild fowl were domesticated as early as 3200 B.C.
+          Egyptian and Chinese records show that fowl were laying eggs for man in 1400 B.C. and Europe has had domesticated
+          hens since 600 B.C. While there’s evidence of native fowl in the Americas prior to Columbus’ arrival, it’s believed
+          that on his second trip, he carried the first chickens related to those now in egg production.Nearly 200 breeds and
+          varieties of chickens have been established worldwide.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="cell wow fadeInRight" data-wow-delay="2s">
+      <h2>Early 1900 t0 1960 egg production </h2>
+      <p class="big1"> The caging system also lent itself to increased automation, which was needed to handle the
+        increased output of eggs from the hens. Conveyor belts were added to the hen house to collect the eggs as soon as
+        they were laid and carry them to the washers.
+        <br />
+        By the early 1960s, improved technology and the development of sophisticated mechanical equipment were responsible for a shift to larger commercial operations.
+
+      Improving the health of hens through more protective housing and better feeding facilities led to more eggs which led to increased automation to handle the eggs.
+      With increased automation, labor costs were reduced, providing a lower cost to the consumer. In addition to much improved hen health,
+      equal-opportunity feeding also made the nutrient quality of eggs more uniform.
+      </p>
+    </div>
+      <div class="cell wow fadeInLeft" data-wow-delay="1s">
+      <img src="img/doge_1.gif" alt=""/>
+      </div>
+
+  </div>
+  <div class="row">
+    <div class="cell wow fadeInRight" data-wow-delay="2s"><img src="img/doge_1.gif" alt=""/></div>
+    <div class="cell">
+      <div class="cell wow fadeInLeft" data-wow-delay="1s">
+        <h2> Modern day egg production</h2>
+        <p class="big1"> Each of the roughly 300 million laying birds in the U.S. produces from 250 to 300 eggs
+          a year. In total, the U.S. produces about 75 billion eggs a year, about 10% of the world supply.
+          About 60% of the eggs produced are used by consumers, about 9% are used by the foodservice industry.
+          The rest are turned into egg products which are used mostly by foodservice operators (restaurants) and
+          by food manufacturers to make foods like mayonnaise and cake mixes.
+        </p>
       </div>
     </div>
   </div>
@@ -221,7 +258,8 @@ $(document).ready(function(){
           </div>
 
       <div class="row-column">
-        <div class="cell"><h1 class="myth"> CAGE-FREE FARMING IS MORE HUMANE</h1>
+        <div class="cell"> <div class="h4block pie">
+          <h1 class="myth"> CAGE-FREE FARMING IS MORE HUMANE</h1></div>
         </div>
       </div>
       <div class="row">
@@ -235,7 +273,8 @@ $(document).ready(function(){
         </div>
       </div>
       <div class="row-column">
-        <div class="cell"><h1 class="myth"> BROWN CHICKENS LAY BROWN EGGS</h1>
+        <div class="cell"> <div class="h4block pie">
+          <h1 class="myth"> BROWN CHICKENS LAY BROWN EGGS</h1> </div>
           <p> </p>
         </div>
       </div>
@@ -289,7 +328,7 @@ $(document).ready(function(){
     <!-- <img src="./img/chicken.jpg" alt="chicken"> -->
   </div>
   <!--video test here  -->
-  <div id="videoDiv">
+  <div class="container-fluid"id="videoDiv">
 <div id="videoBlock">
 <video preload="preload"  id="video" autoplay="autoplay" loop="loop">
   <source src="img/clouds.webm" type="video/webm"> </source>
@@ -319,63 +358,27 @@ $(document).ready(function(){
         <div class="cell">
           <h1 class="myth"> Different types of eggs</h1>
         </div>
+          </div>
         <div class="row">
           <div class="cell">
-            <h1> Standard White Eggs</h1>
-            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
-            <p>These eggs come from white hens that are typically raised in conventional housing systems.  Conventional housing has
-               been the standard for decades, but the Alberta egg industry has begun to transition away from conventional housing systems.</p>
-          </div>
-          <div class="cell">
-            <h1> Standard Brown Eggs</h1>
-            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
-            <p> These eggs come from brown hens that are typically raised in conventional housing systems.  Conventional
-              housing has been the standard for decades, but the Alberta egg industry has begun to transition away from conventional housing systems.</p>
-          </div>
-          <div class="cell">
-            <h1> Free-Run Eggs</h1>
-            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
-            <p>
-              These eggs come from hens that are raised in free-run (barn or aviary) housing systems.
-              Free-run systems allow the hens to roam freely within an enclosed barn, while also providing a variety of enrichments such as nesting boxes and perches
-            </p>
-          </div>
-          <div class="cell">
-            <h1> Free-Range Eggs</h1>
-            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
-            <p> These eggs come from hens that are raised in free-run (barn or aviary) housing systems, which also provide access to outdoor runs (when weather permits).
-            </p>
+          <ul class="big1">
+           <li> Standard White eggs </li>
+           <li> Standard Brown eggs </li>
+           <li>  Free-range eggs </li>
+           <li> Omega-3 eggs </li>
+           <li> Organic eggs </li>
+           <li> Vitamin-Enhanced eggs</li>
+           <li> Vegetarian fed eggs</li>
+          </ul>
           </div>
         </div>
         <div class="row">
           <div class="cell">
-            <h1> Organic Eggs</h1>
-            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
-            <p>These eggs come from hens that are raised in free-range housing systems.  The hens are only provided feed that has been certified organic,
-              which means that it only contains ingredients that were grown without pesticides, herbicides or commercial fertilizer.
-              Look for a certified organic symbol on the egg carton.</p>
-          </div>
-          <div class="cell">
-            <h1> Omega-3 Eggs</h1>
-            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
-            <p> These eggs come from hens that were provided feed containing extra flax (up to 10-20%).  As a result, the eggs laid by these hens
-              contain more Omega-3 fatty acids.</p>
-          </div>
-          <div class="cell">
-            <h1> Vitamin-Enhanced Eggs</h1>
-            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
-            <p>
-              These eggs come from hens that were provided feed that was nutritionally enhanced to include higher levels of certain vitamins (ie: Vitamin D or
-              Vitamin E).  As a result, the eggs laid by these hens contain corresponding higher amounts of the particular vitamin(s).</p>
-          </div>
-          <div class="cell">
-            <h1> Vegetarian Eggs</h1>
-            <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
-            <p> These eggs come from hens that were provided feed containing only plant-based ingredients.
-            </p>
+
           </div>
         </div>
-      </div>
+
+
 
 </div><!--end four-->
 </div>
@@ -386,7 +389,27 @@ $(document).ready(function(){
 
 
 <div id="five">
-<h1>five</h1>
+    <h1 class="myth"> Top egg recipe</h1>
+  <div class="flex-container">
+
+    <div><ul class="recipe"> <h2> Ingredients</h2>
+      <h2> FOR THE HOLLANDAISE:</h2>
+     <li> ¾  cup (1 1/2 sticks) unsalted butter </li>
+     <li> 3  large egg yolks </li>
+     <li>  1 ½  teaspoons fresh lemon juice, plus more to taste </li>
+     <li>  Kosher salt and freshly ground pepper </li>
+     <h2> FOR THE POACHED EGGS:</h2>
+     <li> 1  tablespoon white distilled vinegar
+ Kosher salt </li>
+     <li> 8  large eggs</li>
+     <h2>FOR THE BENEDICT AND ASSEMBLY:</h2>
+    </ul></div>
+    <div> <h2> Procedure</h2>
+    <p>
+
+    </p>
+    </div>
+  </div>
 
 </div><!--end five-->
 </div>
@@ -508,6 +531,13 @@ function typeWriter(text, i, fnCallback) {
 StartTextAnimation(0);
 });
     </script>
+<!-- script for the vertical nav bar -->
+<script src='http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+   <script  src="js/verticalnav.js"></script>
 
 
   </body>

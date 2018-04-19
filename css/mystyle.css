@@ -53,12 +53,18 @@ a:visited {
 }
 
 /* section style here */
-#one, #two, #three, #four, #five, #six, #seven,#eight {
+ #two, #three, #four, #five, #six, #seven,#eight {
 	height: 200vh;
 	/* border-bottom: thin dashed #333; */
-	padding-top: 50%;
+	padding-top: 100%;
 	width: 100%
 	}/*you can change this*/
+	#one {
+		height: 200vh;
+		padding-top: 10%
+		width: 100%
+		padding-bottom: 10%
+	}
 
 .cell{
 	min-height: 100px;
@@ -375,7 +381,7 @@ font-family: 'Ubuntu', sans-serif;
 	position: relative;
 	text-align: center;
     color:#faf8e6;
-		font-size: 3em;
+		font-size: 1.6em;
 		font-weight: 500;
 		letter-spacing: 1px;
 		font-family: 'Ubuntu', sans-serif;
@@ -386,6 +392,8 @@ font-family: 'Ubuntu', sans-serif;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
+		padding: 20px;
+		background: #888833;
 }
 /*navigation style here*/
 .nav ul {
@@ -398,6 +406,8 @@ font-family: 'Ubuntu', sans-serif;
 	width:120px;
 	padding-top: 30px;
 	height: 75%
+	position:absolute;
+	z-index: 200;
 }
 /* hero sction style here
 
@@ -475,6 +485,34 @@ h4 {
 		text-align: center;
 
 }
+.type1 {
+	color:#faf8e6;
+	font-weight: 800;
+	font-size: 35px;
+	letter-spacing: 3px;
+	margin-bottom: 0px;
+	text-align: center;
+
+}
+
+
+/* flex box style here */
+.flex-container {
+  display: flex;
+	flex-direction: row;
+}
+.flex-container > div {
+  margin: 20px;
+  padding: 30px;
+  font-size: 25px;
+	width: 600px;
+  height:300px;
+  margin: 10px;
+  text-align: left;
+  line-height: 50px;
+
+
+}
 /* .myth {
 		width: auto;
     height: auto;
@@ -505,7 +543,7 @@ body {
 
 /* colours */
 .color-violet {
-  background-color: #f04c3c;
+  background-color: #2f8fed;
 }
 .color-indigo {
   background-color: #2a3f95;
@@ -514,16 +552,16 @@ body {
   background-color: #2F8FED;
 }
 .color-green {
-  background-color: #4DCF42;
+  background-color: #2a3f95;
 }
 .color-yellow {
-  background-color: #ffce09;
+  background-color: #2f8fed;
 }
 .color-orange {
-  background-color: #F19031;
+  background-color: #2a3f95;
 }
 .color-red {
-  background-color: #f04c3c;
+  background-color: #2f8fed;
 	/* background-image: -webkit-linear-gradient(70deg, #fff 50%, #004E95 50%); */
 
 }
@@ -680,7 +718,7 @@ body, html {
   height: 180px;
   position: absolute;
   left: 45%;
-  bottom: 180px;
+  bottom: 35%;
   transform: translate(-50%, 0%);
 }
 .mountains:before, .mountains:after {
