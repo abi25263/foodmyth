@@ -53,10 +53,10 @@ a:visited {
 }
 
 /* section style here */
- #two, #three, #four, #five, #six, #seven,#eight {
-	height: 200vh;
+	#six {
+	height: 100vh;
 	/* border-bottom: thin dashed #333; */
-	padding-top: 100%;
+	padding-top: 10%;
 	width: 100%
 	}/*you can change this*/
 	#one {
@@ -65,7 +65,30 @@ a:visited {
 		width: 100%
 		padding-bottom: 10%
 	}
-
+	#two {
+		height: 200vh;
+		/* padding-top: 10%; */
+		width:100%;
+		padding-bottom: 10%;
+	}
+	#three {
+		height:200vh;
+		padding-top:10%;
+		width:100%;
+		padding-bottom: 10%;
+	}
+	#four {
+		height:250vh;
+		padding-top:10%;
+		width:100%;
+		padding-bottom: 30%;
+	}
+	#five {
+		height: 200vh;
+		/* border-bottom: thin dashed #333; */
+		padding-top: 10%;
+		width: 100%
+	}
 .cell{
 	min-height: 100px;
  	/* outline: thin grey solid; */
@@ -457,6 +480,16 @@ font-family: 'Ubuntu', sans-serif;
 	padding-bottom: 30px;
 	text-align:left;
 	color: #faf8e6;
+	font-family: 'Josefin Sans', sans-serif;
+	/* border: 3px solid #ffce09;
+	border: 1px solid #ffce09;
+    outline-style: solid;
+    outline-color: #ffce09;
+    outline-width: thick; */
+		border-radius: 20px;
+  border: 3px solid #ffce09;
+
+
 }
 .big2 {
 	font-size: 16px;
@@ -464,17 +497,17 @@ font-family: 'Ubuntu', sans-serif;
 	text-align: center;
 }
 .pie{
-margin-top: 100px;
+margin-top: 50px;
 }
 .h4block {
 	background-color: #ffce09;
 	padding:0px 20px 50px 40px;
 	width:50%
 	transform: rotate(-2deg);
-	-webkit-clip-path: polygon(0 8%, 100% 0, 100% 48%, 0 59%);
-clip-path: polygon(0 8%, 100% 0, 100% 48%, 0 59%);
+	-webkit-clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
   margin-bottom: 40px;
-	height:50%
+	height:100%
 }
 h4 {
 	color: white;
@@ -486,20 +519,32 @@ h4 {
 
 }
 .type1 {
-	color:#faf8e6;
+	color:#ffce09;
 	font-weight: 800;
-	font-size: 35px;
+	font-size: 90px;
 	letter-spacing: 3px;
-	margin-bottom: 0px;
+	/* margin-bottom: 20px; */
 	text-align: center;
-
+	font-family: 'Bungee Shade', cursive;
+	padding-bottom: 50px;
+}
+.type2 {
+	color: #faf8e6;;
+	font-size:50px;
+	font-family: 'Roboto', sans-serif;
+	/* border: 5px solid red; */
+	font-weight: bold;
+	text-align: center;
+	font-style: normal;
+	padding-bottom:50px;
+	/* background: yellow; */
 }
 
 
 /* flex box style here */
 .flex-container {
   display: flex;
-	flex-direction: row;
+	flex-direction: column;
 }
 .flex-container > div {
   margin: 20px;
