@@ -280,7 +280,7 @@ $(document).ready(function(){
         </div>
       </div>
       <div class="row-column">
-        <div class="cell"> <img src="./img/chicken.jpg" class="imgcenter" alt="chicken"></div>
+        <div id="egg"> I'm an egg</div>
       </div>
 
 </div><!--end two-->
@@ -356,7 +356,7 @@ $(document).ready(function(){
         <div class="row">
           <div class="cell">
             <p class="big1">
-              The eggs of birds and reptiles (think turtle eggs) have been gathered for food since the dawn of man—and enjoyed by other animals since,
+              The eggs of birds and reptiles have been gathered for food since the dawn of man—and enjoyed by other animals since,
               well, the dawn of eggs. The most commonly-raised are chicken eggs; duck, goose, ostrich and quail eggs are used as gourmet ingredients;
               pheasant eggs and emu eggs can sometimes be found. But the ubiquitous chicken egg holds center stage in our egg glossary.
               Eggs are an inexpensive source of protein, a versatile ingredient and an essential component of foods we hold dear, from omelets to cakes and cookies.
@@ -366,8 +366,9 @@ $(document).ready(function(){
               We also briefly address the other types of eggs that can be found in specialty food stores, on restaurant menus, and the websites of breeders who make
               them available to consumers nationwide.
             </p>
-
-          <ul class="biggy">
+              </div>
+                </div>
+          <!-- <ul class="biggy">
            <li> Standard White eggs </li>
            <li> Standard Brown eggs </li>
            <li>  Free-range eggs </li>
@@ -376,9 +377,23 @@ $(document).ready(function(){
            <li> Vitamin-Enhanced eggs</li>
            <li> Vegetarian fed eggs</li>
            <li> Aracauna Eggs</li>
-          </ul>
-          </div>
-        </div>
+          </ul> -->
+          <div class="row">
+            <div class="cell">
+
+
+
+
+          <div id="eggs" class="shaking">
+    <div id="bubble" class="bubble"><span id="color-helper"></span></div>
+    <div class="eye">
+      <div class="eye-inner"></div>
+    </div>
+  </div>
+    </div>
+            </div>
+
+
         <div class="row">
           <div class="cell">
             <img src="./img/chicken.jpg" class="imgcenter" alt="chicken">
@@ -448,8 +463,8 @@ $(document).ready(function(){
         an increase of 64 percent.Enjoying an egg a day can fall within current cholesterol guidelines, particularly if people opt for other low-cholesterol
         foods throughout the day. If you are concerned about dietary cholesterol you could choose to eat one whole egg plus two egg whites for a fulfilling meal to start the
         day. Nearly half of the protein and most of the vitamins and minerals are contained in the yolk so don’t skip the yolk altogether!
-      Several international health promotion organizations – including Health Canada, the Canadian Heart and Stroke Foundation, the Australian
-      Heart Foundation and the Irish Heart Foundation – promote eggs as part of a heart-healthy diet, recognizing that they make important nutritional contributions.
+      Several international health promotion organizations,including Health Canada, the Canadian Heart and Stroke Foundation, the Australian
+      Heart Foundation and the Irish Heart Foundation,promote eggs as part of a heart-healthy diet, recognizing that they make important nutritional contributions.
       </p>
   </div>
   <div class="row-column">
@@ -465,7 +480,7 @@ $(document).ready(function(){
 <div id="six">
 <div class="row-column">
   <div class="cell">
-  <h1 class="type1"> Resources</h1>
+  <h1 class="type1"> Contact</h1>
   </div>
 </div>
 <div class="row">
@@ -529,7 +544,68 @@ $panel.each(function () {
 
 }).scroll();
     </script>
+<!-- script for the egg with eye here -->
+<script>
+$(document).ready(function() {
+      var $bubble = $('#bubble');
+      var texts = [
+        'White Eggs',
+        'Brown Eggs',
+        'Free-range Eggs',
+        'Cage-free Eggs',
+        'Organic Eggs',
+        'Bluish-green Eggs',
+        'We Know what we are capable of!',
+        'Let us help You stand UP!'
+      ];
+      var colors = [
+        '#2ecc71',
+        '#8e44ad',
+        '#16a085',
+        '#e67e22',
+        '#3498db',
+        '#e74c3c'
+      ];
 
+      doBubble();
+
+      setInterval(doBubble, 3650);
+
+      function doBubble() {
+        $bubble.removeClass('scaled');
+        var index = Math.floor(Math.random() * 3), dir = Math.random() < 0.5 ? 'left' : 'right', color = Math.floor(Math.random() * 6);
+        $bubble.html('<span id="color-helper">' + texts[index] + '</span>');
+        $bubble.css('top', Math.floor(Math.random() * 80) + '%');
+        if (dir == 'left') {
+          $bubble.removeClass('left right').addClass('left');
+        }
+        else if (dir == 'right') {
+          $bubble.removeClass('left right').addClass('right');
+        }
+        setTimeout(function() {
+          $bubble.addClass('scaled').css('background-color', colors[color]).css('color', colors[color]);
+          $('#color-helper').css('color', '#fff');
+          pointEyeToBubbleBounds();
+        }, 350);
+      }
+    });
+
+    function pointEyeToBubbleBounds() {
+      var $bubble = $('#bubble');
+      var bubbleTop = $bubble.offset().top + ( $bubble.height() / 2 );
+      var eyeTop = $('.eye').offset().top + ( $('.eye').height() / 2 );
+      var leftPad = $bubble.offset().left - $('.eye').offset().left;
+      var topPad = bubbleTop - eyeTop;
+
+      var deg = Math.atan(topPad / leftPad);
+      // $('.eye-inner').css('transform', 'rotateZ(' + deg + 'deg)');
+      var x = ((($('.eye').width() - 5) / 2) * leftPad) / Math.sqrt((leftPad * leftPad * 2) + (topPad * topPad));
+      $('.eye-inner').css('transform', 'translate(' + x +
+      'px,' + (x * Math.tan(deg)) + 'px)');
+    }
+
+</script>
+<!-- end egg eye script here -->
     <!-- typing script here -->
     <script>
     document.addEventListener('DOMContentLoaded',function(event){
