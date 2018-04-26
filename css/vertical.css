@@ -195,11 +195,12 @@ Main components
   position: relative;
   margin-right: 10px;
   padding: .5em .5em;
-  color: #ffce09;
-  font-size: 14px;
-  font-size: 0.875rem;
+  color: #faf8e6;
+  font-size: 20px;
+  font-weight: bold;
+  /* font-size: 0.875rem; */
   /* font-family: 'Bungee Shade', cursive; */
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nunito', sans-serif;
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -moz-transition: -moz-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
