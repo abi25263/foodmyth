@@ -60,26 +60,26 @@ a:visited {
 	width: 100%
 	}/*you can change this*/
 	#one {
-		height: 300vh;
+		height: 370vh;
 		padding-top: 10%
 		width: 100%
 		padding-bottom: 10%
 	}
 	#two {
-		height: 250vh;
+		height: 230vh;
 		/* padding-top: 10%; */
 		width:100%;
 		padding-bottom: 10%;
 
 	}
 	#three {
-		height:200vh;
+		height:250vh;
 		padding-top:10%;
 		width:100%;
 		padding-bottom: 10%;
 	}
 	#four {
-		height:330vh;
+		height:300vh;
 		padding-top:10%;
 		width:100%;
 		padding-bottom: 30%;
@@ -519,7 +519,10 @@ font-family: 'Ubuntu', sans-serif;
 	color: #faf8e6;
 	font-family: 'Lato', sans-serif;
 	line-height: 1.3em;
+	margin-left:20px;
+	margin-right:20px;
 }
+
 
 .biggy {
 		font-size: 25px;
