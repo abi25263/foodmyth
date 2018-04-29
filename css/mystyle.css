@@ -73,14 +73,14 @@ a:visited {
 
 	}
 	#three {
-		height:250vh;
+		height:450vh;
 		padding-top:10%;
 		width:100%;
-		padding-bottom: 10%;
+		padding-bottom: 100%;
 	}
 	#four {
-		height:260vh;
-		padding-top:10%;
+		height:320vh;
+		padding-top:20%;
 		width:100%;
 		padding-bottom: 30%;
 	}
@@ -518,7 +518,7 @@ font-family: 'Ubuntu', sans-serif;
 	text-align:left;
 	color: #faf8e6;
 	font-family: 'Lato', sans-serif;
-	line-height: 1.3em;
+	line-height: 1.5em;
 	margin-left:20px;
 	margin-right:20px;
 }
@@ -595,6 +595,36 @@ font-family: 'Oswald', sans-serif;
 	/* background: yellow; */
 }
 
+/* parallax effect */
+.parallax {
+    /* The image used */
+    background-image: url('/img/parallex2.jpg');
+
+    /* Full height */
+    height: 30%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url('/img/parallex1.jpg');
+
+    /* Full height */
+    height: 30%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* end parallax */
+
 #benefit li {
 	/* background: #ff9999; */
 	margin-top:20px;
@@ -620,6 +650,7 @@ font-family: 'Oswald', sans-serif;
 
 
 }
+
 /* .myth {
 		width: auto;
     height: auto;
