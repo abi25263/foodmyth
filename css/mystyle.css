@@ -634,6 +634,15 @@ font-family: 'Oswald', sans-serif;
 	font-family: 'Lato', sans-serif;
 }
 
+#benefit1 li {
+	/* background: #ff9999; */
+	margin-top:20px;
+	padding-top:10px;
+	/* padding: 5px; */
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+
 /* flex box style here */
 .flex-container {
   display: flex;
