@@ -595,6 +595,19 @@ font-family: 'Oswald', sans-serif;
 	/* background: yellow; */
 }
 
+.type3 {
+	color: #faf8e6;;
+	font-size:70px;
+	letter-spacing: 3px;
+font-family: 'Oswald', sans-serif;
+	/* border: 5px solid red; */
+	font-weight: bold;
+	text-align: center;
+	font-style: normal;
+	/* padding-top:10px; */
+	padding-bottom:50px;
+	/* background: yellow; */
+}
 /* parallax effect */
 .parallax {
     /* The image used */
